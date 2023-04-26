@@ -5,7 +5,7 @@ html, body {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom, #a3d6f7, #69b3e3);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
   }
   
   main {
@@ -18,37 +18,54 @@ html, body {
   }
   
   .mainContainer {
-    width: 18rem;
-    height: 26rem;
+    width: 22rem;
+    height: 28rem;
     background-color: #ffffff;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 2rem;
+    padding-top: 2.5rem; 
     margin-bottom: 1rem;
   }
   
-  .weekPrognosis {
-    width: 35rem;
-    height: 6rem;
-    background-color: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .location-form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    margin-bottom: 1rem;
   }
   
-  .location {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+  .location-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
     color: #333;
+  }
+  
+  .submit-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #007aff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #005eb8;
   }
   
   .temp {
@@ -63,4 +80,17 @@ html, body {
     font-weight: 300;
     margin-bottom: 1rem;
     color: #333;
+  }
+  
+  .weekPrognosis {
+    width: 35rem;
+    height: 6rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
   }
