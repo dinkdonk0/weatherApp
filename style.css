@@ -4,12 +4,13 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a3d6f7;
+    background-image: linear-gradient(to bottom, #a3d6f7, #69b3e3);
     font-family: 'Roboto', sans-serif;
   }
   
   main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -17,9 +18,9 @@ html, body {
   }
   
   .mainContainer {
-    width: 24rem;
-    height: 32rem;
-    background-color: #5696f5;
+    width: 18rem;
+    height: 26rem;
+    background-color: #ffffff;
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -27,9 +28,39 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    margin-bottom: 1rem;
   }
   
-  h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+  .weekPrognosis {
+    width: 35rem;
+    height: 6rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
   }
   
+  .location {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .temp {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .stats {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #333;
+  }
