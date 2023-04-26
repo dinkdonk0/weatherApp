@@ -67,6 +67,12 @@ html, body {
   .submit-button:hover {
     background-color: #005eb8;
   }
+  .location {
+    font-size: 3rem; /* Adjust the font size as needed */
+    font-weight: 200;
+    color: #333;
+    margin-bottom: 1rem;
+  }
   
   .temp {
     font-size: 4rem;
