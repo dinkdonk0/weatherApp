@@ -89,14 +89,41 @@ html, body {
   }
   
   .weekPrognosis {
-    width: 35rem;
-    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45rem;
+    height: 8rem;
     background-color: #ffffff;
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .day-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .day-wrapper p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .day {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    width: 6rem;
+    height: 5rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  
