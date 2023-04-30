@@ -21,7 +21,6 @@ async function getWeatherData(location) {
       const temperature = data.current.temp_c; 
       const stats = data.current.condition.text;
       
-      //const weatherText = `The current temperature in ${cityName}, ${region}, ${country} is ${temperature}°C.`;
       updateVariables(cityName, region, country, temperature, stats);
       console.log(weatherText);
     } else {
