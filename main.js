@@ -5,6 +5,10 @@ const countryElement = document.querySelector('.country');
 const tempElement = document.querySelector('.temp');
 const statsElement = document.querySelector('.stats');
 
+const locationForm = document.querySelector('#location-form');
+const locationInput = document.querySelector('#location-input');
+const submitButton = document.querySelector('.submit-button');
+
 async function getWeatherData(location) {
     try {
       const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`);
@@ -37,5 +41,9 @@ function updateVariables(name,region,country,temp, stats){
 }
 
 
-  getWeatherData("Stockholm");
-
+locationForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  
+  const location = locationInput.value;
+  getWeatherData(location);
+});
