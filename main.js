@@ -43,7 +43,6 @@ getWeatherData("Stockholm");
 
 locationForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  
-  const location = locationInput.value;
-  getWeatherData(location);
+
+  getWeatherData(locationInput.value);
 });
