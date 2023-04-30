@@ -40,6 +40,7 @@ function updateVariables(name,region,country,temp, stats){
   statsElement.innerText = stats;
 }
 
+getWeatherData("Stockholm");
 
 locationForm.addEventListener('submit', (event) => {
   event.preventDefault();
