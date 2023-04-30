@@ -5,8 +5,7 @@ async function getWeatherData(location) {
       const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`);
       if (response.ok) {
         const data = await response.json();
-      
-      
+      console.log(data);
       const cityName = data.location.name;
       const region = data.location.region;
       const country = data.location.country;
